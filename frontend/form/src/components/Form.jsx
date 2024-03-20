@@ -10,7 +10,7 @@ function Form() {
         //console.log("data submitted");
 
         event.preventDefault();
-        axios.post('http://localhost:3000/insert', { username, language, input, code })
+        axios.post('https://tuf-assignment-api.vercel.app/', { username, language, input, code })
             .then(res => console.log(res))
             .catch(err => console.log(err));
         event.target.reset();
