@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h2>All DataSets</h2>
+    <table border="black" >
+        <tr>
+            <th>UserName</th>
+            <th>Language</th>
+            <th>Input</th>
+            <th>Code</th>
+            <th>Time</th>
+        </tr>
+        <%for(let d of data){%>
+            <tr>
+                <th><%=d.username%></th>
+                <th><%=d.language%></th>
+                <th><%=d.input%></th>
+                <th><%=d.code%></th>
+                <th><%=d.stamp%></th>
+            </tr>
+       <% }%>
+        
+    </table>
+    
+</body>
+</html>
